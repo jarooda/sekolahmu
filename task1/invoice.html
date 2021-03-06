@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 1 Sekolahmu</title>
+  <link rel="stylesheet" href="./invoice.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Invoice -->
+    <div class="grid-header">
+      <div class="container-logo invoice-header">
+        <img src="https://cdn.sekolah.mu/assets/home/sekolahmu_logo.svg" alt="Logo" class="logo">
+      </div>
+      <div class="invoice-header">
+        <p class="text-right" id="created_at">Dibuat: created_at</p>
+        <p class="text-right" id="expired_at">Kadaluarsa: expired_at</p>
+        <p class="text-right" id="payment_channel">Pembayaran: payment_channel</p>
+      </div>
+
+      <!-- Invoice ID -->
+      <div class="one-column head-column invoice-header bold">
+        <p class="text-center" id="full_id">Invoice: full_id</p>
+      </div>
+
+      <!-- Pembuat Invoice  -->
+      <div class="invoice-header">
+        <p class="text-left bold">Sekolah.mu</p>
+        <p class="text-left">Jl. Jeruk Purut Dalam No.33, RT.6/RW.3, Cilandak Timur,</p>
+        <p class="text-left">Pasar Minggu, Jakarta Selatan, DKI Jakarta 12560</p>
+      </div>
+
+      <!-- Penerima Invoice -->
+      <div class="invoice-header">
+        <p class="text-right bold" id="name">name</p>
+        <p class="text-right" id="email">email</p>
+      </div>
+    </div>
+
+    <!-- Body Invoice -->
+    <div>
+      <div class="invoice-body-section">
+        <div class="head-column grid-body">
+          <p class="bold">Item</p>
+          <p class="text-right bold">Harga</p>
+        </div>
+  
+        <!-- Items Start Here -->
+        <div id="invoice_items">
+          <!-- <div class="grid-body">
+            <p>programs_name</p>
+            <p class="text-right">programs_amount</p>
+          </div> -->
+        </div>
+  
+        <!-- Subtotal Product -->
+        <div class="grid-body">
+          <p class="bold text-right">Total Harga Item</p>
+          <p class="bold text-right" id="total_amount">total_amount</p>
+        </div>
+      </div>
+
+      <!-- Voucher Section -->
+      <div class="invoice-body-section">
+        <div class="head-column grid-body">
+          <p class="bold">Voucher</p>
+          <p class="bold text-right">Potongan</p>
+        </div>
+  
+        <!-- Voucher Start Here -->
+        <div class="grid-body">
+          <p id="voucher_code">voucher_code</p>
+          <p class="text-right" id="voucher_amount">voucher_amount</p>
+        </div>
+      </div>
+      
+      <!-- Total Bayar -->
+      <div class="grid-body invoice-body-section">
+        <p class="bold text-right">Total Bayar</p>
+        <p class="bold text-right" id="amount">amount</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Script start here -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./invoice.js"></script>
+</body>
+</html>

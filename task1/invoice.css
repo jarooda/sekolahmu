@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 50px 0px 50px 0px;
+  background-color: #eee;
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.invoice-header {
+  margin-bottom: 20px;
+}
+
+.container {
+  background-color: #fff;
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  display: grid;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
+}
+
+.grid-header {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+}
+
+.one-column {
+  grid-column: 1 / span 2;
+}
+
+.head-column {
+  background-color: #ccc;
+  padding: 10px 0px;
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+}
+
+.grid-body {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-rows: auto;
+  padding: 10px 15px;
+}
+
+.invoice-body-section {
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .grid-header {
+    grid-template-columns: 100%;
+  }
+
+  .grid-header .invoice-header:nth-child(1) { order: 1; }
+  .grid-header .invoice-header:nth-child(2) { order: 3; }
+  .grid-header .invoice-header:nth-child(3) { order: 2; }
+  .grid-header .invoice-header:nth-child(4) { order: 4; }
+  .grid-header .invoice-header:nth-child(5) { order: 5; }
+
+  .one-column {
+    grid-column: 1;
+  }
+
+  .container-logo {
+    justify-content: center;
+  }
+
+  .invoice-header .text-left {
+    text-align: center;
+  }
+  
+  .invoice-header .text-right {
+    text-align: center;
+  }
+}
