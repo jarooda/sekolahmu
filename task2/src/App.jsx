@@ -1,9 +1,54 @@
 import React from 'react'
+import { Header } from './components'
 
 function App() {
   return (
-    <div className=" text-gray-400">
-      INIT TAILWINDCSS
+    <div className="font-pt-sans">
+      <Header />
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
+      asd <br/>
     </div>
   );
 }
