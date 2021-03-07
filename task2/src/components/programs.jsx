@@ -71,7 +71,7 @@ function Programs() {
           ))
         }
       </div>
-      <div className="flex justify-center my-3">
+      <div className="flex justify-center my-3 pt-5 border-t">
         {
           pagination.map(page => (
             <div key={page.id}>
