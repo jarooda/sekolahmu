@@ -105,7 +105,7 @@ function Header() {
               <div className="flex items-center ml-3 cursor-pointer" onClick={() => { setJenjangShown(!jenjangShown) }}>
                 <p className="font-semibold text-gray-500">Pilihan Jenjang</p>
                 <span className="material-icons text-gray-500">
-                  expand_more
+                  { !jenjangShown ? "expand_more" : "keyboard_arrow_right" }
                 </span>
               </div>
 
