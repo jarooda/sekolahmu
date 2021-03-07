@@ -9,7 +9,7 @@ function Dropdown({ data, isShown, isProfile }) {
         isProfile
         ?
         <div className="flex flex-col items-center py-3">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Avatar" className="h-10 w-10 rounded-full"/>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Profile_avatar_placeholder_large.png" alt="Avatar" className="h-16 w-16 rounded-full"/>
           <p className="font-semibold text-gray-400 mt-2">Fullname</p>
           <p className="font-semibold text-gray-400">(Professional(Umum))</p>
         </div>
@@ -24,8 +24,8 @@ function Dropdown({ data, isShown, isProfile }) {
       {
         isProfile
         ?
-        <div className="font-semibold text-gray-500">
-          <a href="https://www.sekolah.mu/logout" className="px-2">Logout</a>
+        <div className="font-semibold text-gray-500 hover:bg-gray-100">
+          <a href="https://www.sekolah.mu/logout" className="px-2 hover:text-gray-900">Logout</a>
         </div>
         :
         ""
