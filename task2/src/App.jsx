@@ -1,55 +1,12 @@
 import React from 'react'
-import { Header, Banner } from './components'
+import { Header, Banner, Programs } from './components'
 
 function App() {
   return (
     <div className="font-pt-sans">
       <Header />
       <Banner />
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
-      asd <br/>
+      <Programs />
     </div>
   );
 }
