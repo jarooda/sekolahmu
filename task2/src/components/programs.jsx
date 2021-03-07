@@ -61,10 +61,10 @@ function Programs() {
   }
 
   return (
-    <div className="max-w-screen-lg mx-auto my-5">
+    <div className="max-w-screen-lg mx-auto my-5 px-3">
       <h4 className="text-xl font-extrabold font-sans">Program Unggulan</h4>
       <p className="text-gray-400">Temukan program-program menarik lainnya.</p>
-      <div className="grid grid-cols-5 gap-7 my-5">
+      <div className="grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-7 my-5">
         {
           data.data.map(program => (
             <Card key={program.id} data={program}/>

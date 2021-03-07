@@ -33,7 +33,7 @@ function Banner() {
       <Slide {...slideProperties}>
         {
           banners.map(banner => (
-            <div style={{'backgroundImage': `url(${banner.url})`}} className="flex items-center justify-center bg-contain h-80 rounded-2xl bg-no-repeat bg-center" key={banner.id}>
+            <div style={{'backgroundImage': `url(${banner.url})`}} className="flex items-center justify-center bg-contain md:h-80 h-40 rounded-2xl bg-no-repeat bg-center" key={banner.id}>
             </div>
           ))
         }
