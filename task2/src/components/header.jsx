@@ -93,7 +93,7 @@ function Header() {
   ])
 
   return (
-    <div className="py-2 bg-white shadow-md sticky top-0">
+    <div className="py-2 z-20 bg-white shadow-md sticky top-0">
       <div className="px-4 flex justify-between max-w-screen-lg mx-auto items-center">
 
         <div className="flex items-center w-10/12 justify-between">
