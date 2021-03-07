@@ -7,14 +7,20 @@ const dateParser = (rawDate) => {
 
 const currencyFormat = (string) => {
   const number = +string
-  const currency = Number((number).toFixed(2)).toLocaleString(['ban', 'id'])
+  const currency = Number((number)).toLocaleString(['ban', 'id'])
 
-  return `Rp. ${currency}`
+  return `Rp${currency},-`
 }
 
 const fetchData = () => {
-  $.getJSON("./data.json")
-    .done(({ data }) => {
+  fetch("https://api.dev.sekolah.mu/se-test/invoice", {
+    headers: {
+      Authorization: "secret_auth_token!!$$"
+    },
+    method: "GET"
+  })
+    .then(response => response.json())
+    .then(({ data }) => {
       const invoice_data = data.data
 
       $("#created_at").text(`Dibuat: ${dateParser(invoice_data.created_at)}`)
