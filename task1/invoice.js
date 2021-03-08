@@ -45,8 +45,8 @@ const fetchData = () => {
         `)
       })
 
-      if (invoice_data.status_desc === 'success') {
-        $("#payment_channel").append(` (Lunas)`)
+      if (invoice_data.status === '10') {
+        $("#payment_channel").append(` ( ${invoice_data.status_label} )`)
         $("#expired_at").remove()
       }
     })
